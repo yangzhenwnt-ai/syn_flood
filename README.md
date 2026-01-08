@@ -99,11 +99,9 @@ sudo bash scripts/deploy.sh
 172.16.0.0/12
 
 # 业务服务器IP
-106.37.101.89
-106.37.101.88/29
-
-# CDN节点
-150.249.192.144/32
+8.8.8.8
+1.1.1.1
+##填写自己实际ip 白名单
 ```
 
 **重要提示**：
@@ -526,25 +524,13 @@ check_threat_intel() {
 
 ## 📝 变更日志
 
-### v3.0 (2026-01-08)
+### v1.0 (2026-01-08)
 
 - ✨ 重构核心代码，性能提升3倍
 - 🛡️ 新增网段级分布式攻击检测
 - 📊 新增实时监控仪表盘
 - 🔄 优化白名单热更新机制
 - 🐛 修复高并发下的锁死问题
-
-### v2.0 (2025-12-01)
-
-- ✨ 支持配置文件化管理
-- 🔧 新增 systemd 服务支持
-- 📝 完善日志记录机制
-
-### v1.0 (2025-11-01)
-
-- 🎉 首次发布
-- 🛡️ 基础SYN防护功能
-
 ---
 
 ## 📄 许可证
@@ -555,10 +541,8 @@ MIT License
 
 ## 💬 联系方式
 
-- **作者**：SRE Team
-- **邮箱**：sre@example.com
-- **问题反馈**：[GitHub Issues](https://github.com/your-repo/syn-defense/issues)
-
+- **作者**：yangzhenwnt
+- **邮箱**：yangzhenwnt@gmail.com
 ---
 
 ## ⚠️ 免责声明
@@ -570,15 +554,6 @@ MIT License
 2. 做好备份
 3. 制定应急预案
 4. 准备回滚方案
-
----
-
-## 🙏 致谢
-
-感谢以下开源项目：
-- [ipset](https://ipset.netfilter.org/)
-- [iptables](https://www.netfilter.org/)
-- [iproute2](https://wiki.linuxfoundation.org/networking/iproute2)
 
 ---
 
